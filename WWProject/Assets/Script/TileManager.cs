@@ -24,6 +24,7 @@ public class TileManager : MonoBehaviour
                 tileArray[i + 5, j + 5] = spawnedTile.GetComponent<TileScript>();
             }
         }
+        AStar.FindPath(tileArray, new Vector2(0, 0), new Vector2(5, 5));
     }
 
     // Update is called once per frame
